@@ -1,0 +1,190 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+.left-side {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-side h1 {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #333; /* Dark gray color */
+ 
+}
+.left-side p:first-child {
+  margin-bottom: 0; /* Remove margin-bottom for spacing */
+}
+
+.left-side p {
+  font-family: Arial, sans-serif;
+      font-size: 20px;
+      color: #666;
+    margin: 0px; 
+  }
+
+
+.info p {
+  margin: 5px 0;
+ font-size: 25px; 
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; 
+}
+
+
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background-color: #45a049;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.empty-cell {
+  background-color: #f0f0f0;
+}
+
+.selected-time-slots {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.time-slot button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.time-slot button:hover {
+  background-color: #45a049;
+}
+
+.selected-time-buttons {
+  margin-top: 20px;
+}
+
+.selected-time-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.selected-time-buttons button:hover {
+  background-color: #0056b3;
+}
+
+
+.form-container {
+  width: 80%;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.form-container h2 {
+  margin: 0 0 20px 0;
+}
+
+.form-container div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="checkbox"] {
+  width: auto;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
